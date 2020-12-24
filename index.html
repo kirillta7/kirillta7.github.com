@@ -7,18 +7,150 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
 
-    <title>Hello Petrovich Dolboeb</title>
   </head>
   <body>
-    <h1>Hello, Petrovich Dolboeb</h1>
+    <header class="site-header">
+     
+      <div class="header-top-menu"> 
+        <nav class="top-menu">
+          <ul class="menu-main">
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Автобарахолка</a></li>
+            <li><a href="">Дома и квартиры</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Барахолка</a></li>
+            <li><a href="">Форум</a></li>
+          </ul>
+        </nav>
+        <div class="header-top-menu-right">
+          <h2>1234</h2>
+          <h2>6789</h2>
+        </div>
+      </div>
+      <div class="header-top-action"> 
+        <a><img src="static/images/logo.png" alt=""></h1></a>
+        <input type="text" placeholder="Поиск в каталоге">
+        <div>icons</div>
+      </div>
+
+  </header>
+
+  
     <main>
 
+      <div class="catalog-navigation">
+          <h1 class="catalog-navigation-title"> Каталог</h1>
+          <ul class="catalog-navigation-classifier">
+            <li>
+              <a href="#"><div class="catalog-navigation-classifier-image-wrapper"><img src="https://icons.iconarchive.com/icons/designcontest/ecommerce-business/256/phone-icon.png" alt=""></div>
+              <div class="catalog-navigation-classifier-name">Электроника</div></a>
+            </li> 
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://icons.iconarchive.com/icons/jommans/emluator/256/My-Computer-icon.png" alt=""></div>
+            <div>Компьютеры</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://image.freepik.com/free-icon/washing-machine_318-1619.jpg" alt=""></div>
+              <div>Техника</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://prava-potrebitela.ru/wp-content/uploads/2018/03/icono-service13.png" alt=""></div>
+                <div>Стройка</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://img.icons8.com/emoji/452/house-emoji.png" alt=""></div>
+                  <div>Дом и сад</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://s1.iconbird.com/ico/0512/iconspackbyCem/w512h5121337871699512.png" alt=""></div>
+                    <div>Авто и Мото</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="data:image/png;base64,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" alt=""></div>
+                      <div>Спорт</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX////0mL30k7r0lrzzkbn6zt///f7++fv1pcX97vT73+r61OP1osP+8vfzj7j1n8L73en5xdn4wNb2q8n85e761eP97/T2sMz3tc/5ydz84+396fH1nMD2qcj3utL+9vnLBsrpAAAIoklEQVR4nO2dWbuqOgyGd5sCKiiTOIHw///lFod19lKGDqGpz+l7s66W9rND2jRJ//zxeDwej8fj8Xg8Ho/H4/F4PC4TRt2h3lRxHOypm4JOdLgE7XHVcCH4DVFQNwiVaJOXKXAOwIA9gCN1o/Co8+TWZy9lP6TU7cIhurRM8Hdxdzh12zCo27QfmMOIiLp5xsRXPtx7T4Vr6gaa0Z0Hpt7vUbqhbqMJXQFT3fdQWFG3Up8oZ7P6bgpz6nZqE7OZ8fkATtQN1WSfSOm7KVxRN1WLqJDUd6OhbqwO+0ZiAr76sOmom6tOIa+vl/h1BnG7UhLIxLednzZMegY++DaDGKh1YK/wTN1mJVqhKpBBS91oBcKjcg9+1xk4KjUEMrYKqRsuS6i4iL5ovuWEGK4UF9EXfEvddDlCvSF6Q9TUbZdDZ5F5Ksyo2y7FSVsg4wF142U4q9vBH+AbnMIb/R78jjPwVnMVfSp0/wwcJmYKGbWAWVqTMXpDuL6puRisMg+Fjp+Bo8ZQoPNOYdMxelMYU2uYZG86Rp13CqfGAh03iOpeiwGFLhvESNXvNKgQqGVMoOYaHYO7ewbuRq921RS6axBxupBxZ53CHUoPuuwUPuN0ocNOYSSB7jqFK/PtzFNhSS1lhCvSNGQsWaaB3fqSxUGw0TVGa6xByliKbxDX8SllcA8PFCzXO4HmeArZAVdeXTSC/xMeyBsdr3OY4AlEdQpH8Wr3Pn9AZ5TUiF2I6BQOz81QlATXcFliDlI8p3A1EqUEoN6JiIMUzSm8vo4aMKHsKtliGcO7QpwzcDwRxaPuKokRBymDK4bAk5gw0OoT4YRm7nsQDGI3fUHLlRczjMP9P99vrHDbzMSxqoZebTEHKYJTeJtOC1SPhzC6bfrE1CnczQjUcCNgHQ1fDTB0Cs/cDYH6LEReaEydwqM30AB9Yg4/akyCVPSpL2gyzQxiPGybuYCyPZ+DTCvYY18FxWnVsMdvZCzVyCAehr4eeHrGcOGFXX3JblqvSQOCP7pVR63RLWk58I2ixL7QCqPt+tL3a5k8jp2KUnf6X519jlGeLhnBEkbdenPTelyx3Y/WWbFCPzDq8/5StNac6F29qc7tMennq5jMntF3Cn/cDYGgCNDp1nUW59dxI6rtFA7fr/d0bB8e1ahEbafwx0cKWgf6qGNA2yn8vpBSXyhHuzGFmk7h9xMAzknThFHfh2bqzPs6Q39RN2Sd778901vg3z5Px6WGSzS61ICeQfxt7YGRpxi1oyaRazmF346p9JdYE5Eb6t6+nrdfDO8yuQ7iuKqqLMs2m8tlv69vrNfbbddFN8KRe5BoKnwKToE68e+9L+Bl+gW7+6HpWfmh/9uz273+9tx3aU3TpEmyWl3L8vh5m/BbItfg9yciDlJZZ+lrxw135P7HAMR4gIEDiwvs8FbSPa4fCgvEq+Tt2OaLFMwtKUo4GzrigqcwxAtSwEN34zfM+N6EDtxERtS7NSRws4vWLvYhbkDHilrPB9iBVRjRz7hguy8QA6KQQM/asLDNVAM92XbMHUEGeo0U1yYivoemdux4oecjmMSxrSnHT/Fza+O2hA8KORrDkCUy/CKEnC48Fogyxkg8xGMZXzdmCK0pC11X6Jb6wGepdIaRMBYCFjCGD5zZmy5WyNaVndty1VHME9VRWDLLNnBiJi5Z4OYj1IOCZfPCxsNH7KF3tyoNvWt46av7A/lMhKUro2AmB+mwfNkQ7TJtSAItxCbQbsCtFOyj3NksvI6+0C9GZ4qtSNJoLp1jKbi1si9EN1FgsS4oiVfKbp3siiB0wXKZbOunDLBeEMXy3gYISqAhZ7PNQFLj7WxxLhIVsQumgw/xAECMDVIis6MQGrpw9Xom3RgFvqIM5u4mEn+QECfaYqBhO5X2jyGQvq5ytqQnnDcuFP/eLnaaAn5ypDrfVAUOE4HgTm3z7oi/TQXhSgc+2CS4Kw7whMrKjxEGMm+SycJZ4GDB6CgXOPMRuMidGqD/ERYY/chZ4ai+nihIzeYj8OZMnnE3TZSVO92OBBCr2OH++2GbNxodCcChdWEHI8e+SNXqg4BoTo6Xav+gPpdMbnG9rZ1JoV2wkpRocy4f1SOGhUJfMGeXttXBQeMnz6HKj+mjTgaHF32WJmfNqg0uX9l3n0SHehOf8/Z0vHFqizyoLrXjVsHj8Xg8HiW2dRUH8WaNZ7ujvnpYXO2deCmxLhJ41pJoygpDZBSXzbM4BUsK6tNGlgj+zzaTi9Z0o9IVvw4lIBJKl+K6/HAicsP84wA+js/iSnb1VA1WaBSlfjdG5dBxC4CoYFk+cpDXjwoZK50LNCXL8lE3NzC9NXCi+LEgkDhVg0AveGnyWUVh/a22wSqpP2hFgU5mjoHleKHZeG+NsiMzzyrafrlltuiQet7OXOzxzq5dnA2FVs76yGbdyAs9TjPMfCS0cmmV43zZWpsbuPnXyVQtRjd/E2DzpeRQotKJYmVYmWpiFoepzPtrir94IfOR9g5TMvUVFCeiTNkNixGmUvldidK+Riaz0WLFYKmqUamSQpkbHIuv7ErllKhlt8h8Im7pq0mk+lBtlMrUFbHYhzLJCIpFmmVek1osR/2TtcxaqpbfIvNCCNjb1MjkdCsWXZeY2mAlb+3J/CZSdRcpYWJxqwjOILHUqBkLmSxxqy/QdrNLn7LvaD5DZWf1sn/2cKH+ZNZcbIrl8uvRzLTRaM7MjwZg+dp/Zu3TWPbC6d/MfkT75GFAyzZfprKMCJ4Qnnr5THMDOTEurNrCF+Meam0H9fiLJlqv3xrTJcMNEvrvigfDA5UnRFelg/kynJnsjy/wefkEoqULe9snbw3iUJi1JizeLhCBr2iD9rMj3GMP4R5Emebmw2mbJ/egzfvTX4If6bNKuqw43jaVzep0rnFGU1gH/TN9LD0WlROxCh6Px+PxeDwej8fz/+Mv7WZ3AbmI2/EAAAAASUVORK5CYII=" alt=""></div> <div>Детям и мамам</div></a></li>
+            <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://img.icons8.com/cotton/452/sleeper-chair.png" alt=""></div>
+              <div>Раота и офис</div></a></li>
+              <li> <a href="#"><div class="catalog-navigation-classifier-image-wrapper"> <img src="https://storage.googleapis.com/multi-static-content/previews/artage-io-thumb-cbee673ee94e451615959894eb3b2754.png" alt=""></div>
+                <div>Еда</div></a></li>
+          </ul>
+          <ul class="catalog-navigation-classifier-brand">
+           <li><a href="#">Honor</a></li>
+            <li>Apple</li>
+            <li>Huawei</li>
+            <li>Bosh</li>
+            <li>LG</li>
+            <li>Lenovo</li>
+            <li>Asus</li>
+            <li>Суперцены</li>
+          </ul>
+      </div>
+        
+      <div class="catalog-bar-main">
+        <ul class="catalog-bar-list">
+          <li>Мобильные телефоны</li>
+          <li>Часы</li>
+          <li>Наушники</li>
+          <li>Телевизоры</li>
+          <li>Ноутбуки</li>
+          <li>Планшеты</li>
+          <li>Машинки для стрижки</li>
+          <li>Наручные часы</li>
+          <li>Кофеварки</li>
+        </ul>
+      </div>
 
+    <div class="tiles-grid">
+      <div class="tiles-grid-column">  
+        <a href="#" class="tiles-card">
+          <div class="tiles-card-title"><h3>Банкетки и тумбы для обуви</h3></div>
+          <div class="tiles-card-subtitle"><h4>Экономия места в прихожей</h4></div>
+          <div class="tiles-card-img">
+                  <img src="https://icons.iconarchive.com/icons/iconleak/or/256/archive-icon.png" alt="">
+          </div>
+        </a>
 
+        <a class="tiles-card">
+          <div class="tiles-card-title"><h3>Елки на любой вкус</h3></div>
+            <div class="tiles-card-subtitle"><h4>Елки и Ели</h4></div>
+            <div class="tiles-card-img">
+              <img src="https://icons.iconarchive.com/icons/enhancedlabs/the-real-christmas-05/128/Christmas-Tree-icon.png" alt="">
+            </div>
+          </a>
+      </div>  
 
-        Volkswagen ([fɔlksˈvaːɡn], в переводе с нем. — «народный автомобиль») — немецкая автомобильная марка, одна из многих, принадлежащих концерну Volkswagen AG. Под этой маркой в 2019 году было реализовано 6 млн 620 тыс. автомобилей[источник не указан 244 дня]. Штаб-квартира — в Вольфсбурге. Там же находится и Автомузей Volkswagen.
+          <div class="tiles-card">
+            <div class="tiles-card-title"><h3>Новогодние украшения</h3></div>
+              <div class="tiles-card-subtitle"><h4>Шарики и дождики</h4></div>
+              <div class="tiles-card-img">
+                <img src="https://icons.iconarchive.com/icons/aha-soft/standard-new-year/256/Christmas-ornaments-icon.png" alt="">
+              </div>
+          </div>
 
+          <div class="tiles-card">
+            <div class="tiles-card-title"><h3>Коньки всех размеров</h3></div>
+              <div class="tiles-card-subtitle"><h4>Детские и взрослые</h4></div>
+              <div class="tiles-card-img">
+                <img src="https://icons.iconarchive.com/icons/icons8/christmas-flat-color/256/ice-skate-icon.png" alt="">
+              </div>
+          </div>
+
+    </div>
+   
+<footer>
+  <div class="epilog">
+    <ul class="the-end">
+      <li><a>О компании</a></li>
+      <li><a>Редакция</a></li>
+      <li><a>Реклама</a></li>
+      <li><a>Контакты</a></li>
+      <li><a>Вакансии</a></li>
+      <li><a>Манифест</a></li>
+      <li><a>Договора</a></li>
+    </ul>
+        
+      </div>
+
+      <ul class="icons">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </div>
+  </div>
+</footer>
 
     </main>
 
